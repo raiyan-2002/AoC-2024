@@ -1,0 +1,191 @@
+[
+    {
+        "label": "collections",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "collections",
+        "description": "collections",
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "filePath",
+        "kind": 5,
+        "importPath": "Day 1.parta",
+        "description": "Day 1.parta",
+        "peekOfCode": "filePath = \"input.txt\"\nnums1 = []\nnums2 = []\nres = 0\nwith open(filePath, 'r') as file:\n    for line in file:\n        item1, item2 = line.split('  ')\n        nums1.append(int(item1))\n        nums2.append(int(item2))\nnums1.sort()",
+        "detail": "Day 1.parta",
+        "documentation": {}
+    },
+    {
+        "label": "nums1",
+        "kind": 5,
+        "importPath": "Day 1.parta",
+        "description": "Day 1.parta",
+        "peekOfCode": "nums1 = []\nnums2 = []\nres = 0\nwith open(filePath, 'r') as file:\n    for line in file:\n        item1, item2 = line.split('  ')\n        nums1.append(int(item1))\n        nums2.append(int(item2))\nnums1.sort()\nnums2.sort()",
+        "detail": "Day 1.parta",
+        "documentation": {}
+    },
+    {
+        "label": "nums2",
+        "kind": 5,
+        "importPath": "Day 1.parta",
+        "description": "Day 1.parta",
+        "peekOfCode": "nums2 = []\nres = 0\nwith open(filePath, 'r') as file:\n    for line in file:\n        item1, item2 = line.split('  ')\n        nums1.append(int(item1))\n        nums2.append(int(item2))\nnums1.sort()\nnums2.sort()\nfor i in range(1000):",
+        "detail": "Day 1.parta",
+        "documentation": {}
+    },
+    {
+        "label": "res",
+        "kind": 5,
+        "importPath": "Day 1.parta",
+        "description": "Day 1.parta",
+        "peekOfCode": "res = 0\nwith open(filePath, 'r') as file:\n    for line in file:\n        item1, item2 = line.split('  ')\n        nums1.append(int(item1))\n        nums2.append(int(item2))\nnums1.sort()\nnums2.sort()\nfor i in range(1000):\n    res += abs(nums1[i] - nums2[i])",
+        "detail": "Day 1.parta",
+        "documentation": {}
+    },
+    {
+        "label": "filePath",
+        "kind": 5,
+        "importPath": "Day 1.partb",
+        "description": "Day 1.partb",
+        "peekOfCode": "filePath = \"input.txt\"\nnums1 = []\ncounts = collections.defaultdict(int)\nres = 0\nwith open(filePath, 'r') as file:\n    for line in file:\n        item1, item2 = line.split('  ')\n        nums1.append(int(item1))\n        counts[int(item2)] += 1\nfor num in nums1:",
+        "detail": "Day 1.partb",
+        "documentation": {}
+    },
+    {
+        "label": "nums1",
+        "kind": 5,
+        "importPath": "Day 1.partb",
+        "description": "Day 1.partb",
+        "peekOfCode": "nums1 = []\ncounts = collections.defaultdict(int)\nres = 0\nwith open(filePath, 'r') as file:\n    for line in file:\n        item1, item2 = line.split('  ')\n        nums1.append(int(item1))\n        counts[int(item2)] += 1\nfor num in nums1:\n    res += num * counts[num]",
+        "detail": "Day 1.partb",
+        "documentation": {}
+    },
+    {
+        "label": "counts",
+        "kind": 5,
+        "importPath": "Day 1.partb",
+        "description": "Day 1.partb",
+        "peekOfCode": "counts = collections.defaultdict(int)\nres = 0\nwith open(filePath, 'r') as file:\n    for line in file:\n        item1, item2 = line.split('  ')\n        nums1.append(int(item1))\n        counts[int(item2)] += 1\nfor num in nums1:\n    res += num * counts[num]\nprint(res)",
+        "detail": "Day 1.partb",
+        "documentation": {}
+    },
+    {
+        "label": "res",
+        "kind": 5,
+        "importPath": "Day 1.partb",
+        "description": "Day 1.partb",
+        "peekOfCode": "res = 0\nwith open(filePath, 'r') as file:\n    for line in file:\n        item1, item2 = line.split('  ')\n        nums1.append(int(item1))\n        counts[int(item2)] += 1\nfor num in nums1:\n    res += num * counts[num]\nprint(res)",
+        "detail": "Day 1.partb",
+        "documentation": {}
+    },
+    {
+        "label": "valid",
+        "kind": 2,
+        "importPath": "Day 2.parta",
+        "description": "Day 2.parta",
+        "peekOfCode": "def valid(arr, increasing):\n    prev = arr[0]\n    for i in range(1, len(arr)):\n        curr = arr[i]\n        if increasing:\n            if curr <= prev:\n                return False\n        else:\n            if curr >= prev:\n                return False",
+        "detail": "Day 2.parta",
+        "documentation": {}
+    },
+    {
+        "label": "filePath",
+        "kind": 5,
+        "importPath": "Day 2.parta",
+        "description": "Day 2.parta",
+        "peekOfCode": "filePath = \"input.txt\"\ndef valid(arr, increasing):\n    prev = arr[0]\n    for i in range(1, len(arr)):\n        curr = arr[i]\n        if increasing:\n            if curr <= prev:\n                return False\n        else:\n            if curr >= prev:",
+        "detail": "Day 2.parta",
+        "documentation": {}
+    },
+    {
+        "label": "res",
+        "kind": 5,
+        "importPath": "Day 2.parta",
+        "description": "Day 2.parta",
+        "peekOfCode": "res = 0\nwith open(filePath, 'r') as file:\n    for line in file:\n        strings = line.split(' ')\n        ints = [int(string) for string in strings]  \n        increasing = ints[0] < ints[-1] # this is true means the sequence should be increasing, false otherwise \n        res += 1 if valid(ints, increasing) else 0\nprint(res)",
+        "detail": "Day 2.parta",
+        "documentation": {}
+    },
+    {
+        "label": "valid",
+        "kind": 2,
+        "importPath": "Day 2.partb",
+        "description": "Day 2.partb",
+        "peekOfCode": "def valid(arr, increasing):\n    prev = arr[0]\n    for i in range(1, len(arr)):\n        curr = arr[i]\n        if increasing:\n            if curr <= prev:\n                return False\n        else:\n            if curr >= prev:\n                return False",
+        "detail": "Day 2.partb",
+        "documentation": {}
+    },
+    {
+        "label": "filePath",
+        "kind": 5,
+        "importPath": "Day 2.partb",
+        "description": "Day 2.partb",
+        "peekOfCode": "filePath = \"input.txt\"\ndef valid(arr, increasing):\n    prev = arr[0]\n    for i in range(1, len(arr)):\n        curr = arr[i]\n        if increasing:\n            if curr <= prev:\n                return False\n        else:\n            if curr >= prev:",
+        "detail": "Day 2.partb",
+        "documentation": {}
+    },
+    {
+        "label": "res",
+        "kind": 5,
+        "importPath": "Day 2.partb",
+        "description": "Day 2.partb",
+        "peekOfCode": "res = 0\nwith open(filePath, 'r') as file:\n    for line in file:\n        strings = line.split(' ')\n        ints = [int(string) for string in strings]  \n        increasing = ints[0] < ints[-1] # this is true means the sequence should be increasing, false otherwise \n        if valid(ints, increasing):\n            res += 1\n        else:\n            for i in range(len(ints)):",
+        "detail": "Day 2.partb",
+        "documentation": {}
+    },
+    {
+        "label": "compute",
+        "kind": 2,
+        "importPath": "Day 3.parta",
+        "description": "Day 3.parta",
+        "peekOfCode": "def compute(line):\n    res = 0\n    statements = re.findall(r'mul\\((\\d+),(\\d+)\\)', line)  # Finds all digit sequences\n    for x, y in statements:\n        res += int(x) * int(y)\n    return res\nwith open(filePath, 'r') as file:\n    for line in file:\n        res += compute(line)\nprint(res)",
+        "detail": "Day 3.parta",
+        "documentation": {}
+    },
+    {
+        "label": "filePath",
+        "kind": 5,
+        "importPath": "Day 3.parta",
+        "description": "Day 3.parta",
+        "peekOfCode": "filePath = \"input.txt\"\nres = 0\ndef compute(line):\n    res = 0\n    statements = re.findall(r'mul\\((\\d+),(\\d+)\\)', line)  # Finds all digit sequences\n    for x, y in statements:\n        res += int(x) * int(y)\n    return res\nwith open(filePath, 'r') as file:\n    for line in file:",
+        "detail": "Day 3.parta",
+        "documentation": {}
+    },
+    {
+        "label": "res",
+        "kind": 5,
+        "importPath": "Day 3.parta",
+        "description": "Day 3.parta",
+        "peekOfCode": "res = 0\ndef compute(line):\n    res = 0\n    statements = re.findall(r'mul\\((\\d+),(\\d+)\\)', line)  # Finds all digit sequences\n    for x, y in statements:\n        res += int(x) * int(y)\n    return res\nwith open(filePath, 'r') as file:\n    for line in file:\n        res += compute(line)",
+        "detail": "Day 3.parta",
+        "documentation": {}
+    },
+    {
+        "label": "compute",
+        "kind": 2,
+        "importPath": "Day 3.partb",
+        "description": "Day 3.partb",
+        "peekOfCode": "def compute(line):\n    res = 0\n    statements = re.finditer(r'mul\\((\\d+),(\\d+)\\)', line)  # Finds all digit sequences\n    dos = re.finditer(r'do\\(\\)', line)\n    donts = re.finditer(r'don\\'t\\(\\)', line)\n    instrs = []\n    for do in dos:\n        instrs.append((do.end() - 1, True))\n    for dont in donts:\n        instrs.append((dont.end() - 1, False))",
+        "detail": "Day 3.partb",
+        "documentation": {}
+    },
+    {
+        "label": "filePath",
+        "kind": 5,
+        "importPath": "Day 3.partb",
+        "description": "Day 3.partb",
+        "peekOfCode": "filePath = \"input.txt\"\ndef compute(line):\n    res = 0\n    statements = re.finditer(r'mul\\((\\d+),(\\d+)\\)', line)  # Finds all digit sequences\n    dos = re.finditer(r'do\\(\\)', line)\n    donts = re.finditer(r'don\\'t\\(\\)', line)\n    instrs = []\n    for do in dos:\n        instrs.append((do.end() - 1, True))\n    for dont in donts:",
+        "detail": "Day 3.partb",
+        "documentation": {}
+    }
+]
