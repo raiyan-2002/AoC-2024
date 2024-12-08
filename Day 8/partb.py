@@ -27,8 +27,6 @@ nodes = set()
 for item in items:
     coords = items[item]
     n = len(coords)
-    for x in items[item]:
-        nodes.add(x)
 
     for i in range(n - 1):
         for k in range(i + 1, n):
@@ -37,13 +35,13 @@ for item in items:
             n1y, n1x = coords[i]
             n2y, n2x = coords[k]
 
-            while inRange(n2y - dy, n2x - dx, height, width):
-                nodes.add((n2y - dy, n2x - dx))
+            while inRange(n2y, n2x, height, width):
+                nodes.add((n2y, n2x))
                 n2y -= dy
                 n2x -= dx
             
-            while inRange(n1y + dy, n1x + dx, height, width):
-                nodes.add((n1y + dy, n1x + dx))
+            while inRange(n1y, n1x, height, width):
+                nodes.add((n1y, n1x))
                 n1y += dy
                 n1x += dx
             
